@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background: #fff;
+    
+    font-family: Open Sans;
+}
+
+#logo {
+    position: absolute;
+    height: 75px;
+    width: auto;
+    margin: 25px;
+}
+
+#splash {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url("Images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+}
+
+#landingPage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#contentHolder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-filter: drop-shadow(0px 0px 30px rgba(0,0,0,0.6));
+    filter: drop-shadow(0px 0px 30px rgba(0,0,0,0.6));
+}
+
+#contentHolder h1 {
+    font-family: Open Sans Condensed;
+    font-size: 4em;
+    font-weight: 900;
+    margin: -0.2em 0em;
+    color: white;
+}
+
+#contentHolder h2 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 5px;
+    color: white;
+}
+
+#contentHolder img {
+    width: 20em;
+    height: auto;
+    display: block;
+    margin: -2.5em auto;
+}
+
+.horizontalContent {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.horizontalContent h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.horizontalContent p {
+    font-size: 0.9em;
+    font-weight: 300;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.horizontalContent img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin: -1em;
+}
+
+.horizontalContent .column {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.horizontalContent .input {
+    width: 90%;
+    margin: 0.5em;
+    border: solid 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pad {
+    padding: 1em;
+}
+
+.top {
+    vertical-align: top !important;
+}
+
+.verticalContent {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 5em 0em;
+}
+
+.verticalContent h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.verticalContent h2 {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 1.1em;
+}
+
+.verticalContent p {
+    font-size: 0.9em;
+    font-weight: 300;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+#teamMembers {
+    width: 100%;
+    padding: 2em 10em;
+    table-layout: fixed;
+}
+
+#teamMembers td {
+    text-align: center;
+    padding: 1em 0em;
+}
+
+#teamMembers img {
+    width: 10em;
+    height: 10em;
+    border-radius: 10em;
+    
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+#teamMembers img:hover {
+    transform: scale(1.05);
+}
+
+#form {
+    margin-top: 30px;
+}
+
+.button {
+    width: 150px;
+    height: 30px;
+    border: solid 1px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    background: white;
+    color: black;
+    
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    padding: 20px 10px;
+    color: black;
+    
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
+
+:-ms-input-placeholder {  
+    font-style: italic;
+    font-weight: 400;
+    color: rgba(0,0,0,0.5);
+}
