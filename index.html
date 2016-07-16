@@ -3,7 +3,8 @@
         <title>Power Lab Systems</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://use.fontawesome.com/5821e43f29.js"></script>
-
+        <script src="jquery.min.css"></script>
+        <script src="main.js"></script>
     </head>
     <body>
         <div id="splash"></div>
@@ -84,11 +85,11 @@
             </div><div class="column right pad top">
                 <h1>CONTACT US</h1>
                 <p>Send us a quick email and we'll be sure to get back to you!</p>
-                <form action="/mail.php" method="post" id="form">
-                    <input class="input" type="text" name="name" placeholder="Name"><br>
-                    <input class="input" type="text" name="email" placeholder="Email"><br>
-                    <textarea class="input" id="comment" name="msg" placeholder="Message..." style="height: 100px;"></textarea><br><br>
-                    <input class="button" type="submit" value="SEND">
+                <form id="form">
+                    <input id="emailName" class="input" type="text" name="name" placeholder="Name"><br>
+                    <input id="emailEmail" class="input" type="text" name="email" placeholder="Email"><br>
+                    <textarea id="emailBody" class="input" id="comment" name="msg" placeholder="Message..." style="height: 100px;"></textarea><br><br>
+                    <input id="emailSend" class="button" type="submit" value="SEND">
                 </form>
             </div>
         </div>
